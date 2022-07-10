@@ -21,6 +21,7 @@ export const Main = () => {
   let linkedin = 'https://in.linkedin.com/in/haris-kumar-5b1894220'
   let twitter = 'https://www.twitter.com/Haris_ETH';
   let portfolio = '';
+  let pfp = 'https://pbs.twimg.com/profile_images/1532907455986155520/9xPXuMQR_400x400.jpg'
 
   return (
     <div className='min-h-screen w-full bg-yellow-400 flex flex-col justify-equal items-center py-8 md:py-10'>
@@ -36,7 +37,9 @@ export const Main = () => {
         pauseOnHover
       />
       
-      <div className="w-32 h-32 rounded-full bg-white border-4 pfp-styler border-black"></div>
+      <div className="w-32 h-32 rounded-full bg-white border-4 pfp-styler border-black">
+        <img src={pfp} alt="Profile Picture of Haris" className='rounded-full w-full h-full' />
+      </div>
 
       <div className="names flex flex-col mt-4">
         <h1 className='text-black font-semibold text-2xl tracking-tight font-clash text-center'>Haris Kumar</h1>
@@ -63,11 +66,11 @@ export const Main = () => {
 
         </button>
 
-        <button className="brutal-btn box-styler bg-yellow-300 ">
+        <a className="brutal-btn box-styler bg-yellow-300 " href='https://www.linkedin.com/in/haris-kumar-5b1894220'>
           <h2 className='font-medium text-custom sm:text-xl'>Connect on LinkedIn</h2>
           <h4>🐦</h4>
 
-        </button>
+        </a>
 
         <button className="brutal-btn box-styler bg-green-500 "  onClick={notify}>
           <h2 className='font-medium text-custom sm:text-xl'>My Portfolio</h2>
