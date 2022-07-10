@@ -1,0 +1,19 @@
+
+.font-clash{
+  font-family: 'Clash Grotesk', sans-serif;
+}
+.brutal-btn{
+  box-shadow: 10px 12px 0 0 black;
+  border: 2.5px black solid !important;
+}
+.text-custom{
+  font-size:15px;
+}
+.brutal-btn:hover{
+  box-shadow: none;
+  transition: ease-in-out 100ms;
+  transform: translate(10px, 12px);
+}
+.pfp-styler{
+  box-shadow: 6px 6px 0 0 black;
+}
